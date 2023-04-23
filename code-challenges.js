@@ -126,17 +126,44 @@ console.log(answer2);
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
 // Pseudo code:
+// Blocker.  I am unsure how to code this, even after researching, using notes and rewatching lecture exams I had to resort to using chatGPT.  I understand you would have to use the .map and .sort built in methods but thst is about it.
+
 
 const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
 
-const answer3 = (sanDiegoSummerTemperatures) => {
-   return sanDiegoSummerTemperatures.map((value) => {
-    return value[0] + value.substring(1)
-   })
-}
-console.log(answer3(sanDiegoSummerTemperatures));
+const numbers = [5, 2, 8, 4, 1]
 
+const smallestToLargest = sanDiegoSummerTemperatures.map(function(temp) {
+  return temp;
+}).sort(function(a, b) {
+  return b - a;
+});
+
+const sortedNumbers = numbers.map(function(number) {
+  return number;
+}).sort(function(a, b) {
+  return b - a;
+});
+console.log(smallestToLargest);
 // Expected output: [82, 80, 79, 77, 76, 73, 72]
+// output is 82, 80, 79, 77, 76, 73, 72
 
 const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
+
+
+// Ran into the same situation as above, followed the same process
+const smallesToLargest2 = sanDiegoWinterTemperatures.map(function(temp) {
+  return temp;
+}).sort(function(a, b) {
+  return b - a;
+});
+
+const sortedNumbers2 = numbers.map(function(number) {
+  return number;
+}).sort(function(a, b) {
+  return b - a;
+});
+
+console.log(smallesToLargest2);
 // Expected output: [68, 67, 66, 66, 62, 59, 59]
+// output is 68, 67, 66, 66, 62, 59, 59
