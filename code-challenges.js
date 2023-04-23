@@ -26,55 +26,55 @@
 // // create an argument and call it temp
 // // this is conditional statement, write else if with returns for each condition. If the temp is less than < 212, the returning output will be below boiling point.  If the temp is strictly at 212 the returning output is at boiling point, and else if any number above 212 output is returned above boiling point.
 // // // console log the boilingPoint and use the variables to see if numbers are below, at, or above boilingpoint
-// var temperature1 = 42
-// var temperature2 = 350
-// var temperature3 = 212
+var temperature1 = 42
+var temperature2 = 350
+var temperature3 = 212
 
-// const boilingPoint = (temp) => {
-//     if (temp < 212) {
-//       return "Below boiling point";
-//     } else if (temp === 212) {
-//       return "At boiling point";
-//     } else {
-//       return "Above boiling point";
-//     }
-//   }
+const boilingPoint = (temp) => {
+    if (temp < 212) {
+      return "Below boiling point";
+    } else if (temp === 212) {
+      return "At boiling point";
+    } else {
+      return "Above boiling point";
+    }
+  }
 
-// // const temperature1 = 42
-// // // Expected output: "42 is below boiling point"
-// console.log(boilingPoint(temperature1));
-// // // output is below boiling point
-// // const temperature2 = 350
-// // // Expected output: "350 is above boiling point"
-// console.log(boilingPoint(temperature2));
-// // // output is above boiling point
-// // const temperature3 = 212
-// // // Expected output: "212 is at boiling point"
-// console.log(boilingPoint(temperature3));
-// // output is at boiling point
+const temperature1 = 42
+// Expected output: "42 is below boiling point"
+console.log(boilingPoint(temperature1));
+// output is below boiling point
+const temperature2 = 350
+// Expected output: "350 is above boiling point"
+console.log(boilingPoint(temperature2));
+// output is above boiling point
+const temperature3 = 212
+// Expected output: "212 is at boiling point"
+console.log(boilingPoint(temperature3));
+// output is at boiling point
 
 
 // // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
-// // Pseudo code:
-// // Need to joing both arrays using the built in method .concat
-// // create a variable called MLB to make action permenant
-// // use MLB.length in console.log 
+// Pseudo code:
+// Need to joing both arrays using the built in method .concat
+// create a variable called MLB to make action permenant
+// use MLB.length in console.log 
 
-// const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
-// const padres1998WorldSeriesRuns = [6, 3, 5, 3]
-// // Expected output: 9
+const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
+const padres1998WorldSeriesRuns = [6, 3, 5, 3]
+// Expected output: 9
 
-// console.log(padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns));  
-// // the output is 2,5,2,2,4,6,3,5,3 however the above is only a temporary change.  To make this action a permenant one a variable needs to be created. create a variable and name it MLB and store the concated arrays in the variable, then console.log
+console.log(padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns));  
+// the output is 2,5,2,2,4,6,3,5,3 however the above is only a temporary change.  To make this action a permenant one a variable needs to be created. create a variable and name it MLB and store the concated arrays in the variable, then console.log
 
-// var MLB = padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns)
+var MLB = padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns)
 
-// // console.log(MLB);
+console.log(MLB);
 
-// //output is ,5,2,2,4,6,3,5,3
+//output is ,5,2,2,4,6,3,5,3
 
-// console.log(MLB.length);
+console.log(MLB.length);
 
 // output is 9
 
@@ -126,7 +126,7 @@ console.log(answer2);
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
 // Pseudo code:
-// Blocker.  I am unsure how to code this, even after researching, using notes and rewatching lecture exams I had to resort to using chatGPT.  I understand you would have to use the .map and .sort built in methods but thst is about it.
+// Blocker.  I am unsure how to code this, even after researching, using notes and rewatching lecture exams I had to resort to using chatGPT.  I understand you would have to use the .map and .sort built in methods but thst is about it.  Would like to possibly set up a time to go rework this problem
 
 
 const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
